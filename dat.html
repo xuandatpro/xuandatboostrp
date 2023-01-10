@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 col-md-3 sidebar bg-dark text-white  " style="min-height:1000px ;">
+                
+                   <div class="sidebar_content">
+                    <div class=" admin " >
+                        <i id="icon_admin" class="fa-regular fa-user"></i>
+                        <a href="">Admin</a>
+                      </div>
+                    <div class=" admin " >
+                        <i id="icon_admin" class="fa-regular fa-user"></i>
+                        <a href="">xuandat</a>
+                      </div>
+                      <nav class="navbar bg-light bg-dark">
+                        <div class="container-fluid">
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                          </form>
+                        </div>
+                      </nav>
+                     
+                    
+                      <div class="home-page style" >
+                        
+                        <a href="">
+                          <i class="fa-solid fa-house-user"></i>
+                          Trang chủ
+                          <i class="fa-solid fa-caret-left"></i>
+                        </a>
+                      </div>
+    
+                    <div class="product style" >
+                      <a href="#add" class="style_collapse"  data-toggle="collapse"> 
+                        <i class="fa-solid fa-chart-pie"></i>
+                        Quản lý sản phẩm 
+                        <i class="fa-solid fa-sort-down "></i>
+                      </a>
+                      <div id="add" class="collapse ">
+                        <div class="style"><a href="">Thêm sản phẩm </a></div>
+                       </div>
+                   
+                      </div>
+                   </div>
+                  </div>
+            
+                <div class="col-9 col-md-9 ps-0 main-content">
+                    <div class="navbar-main-content">
+                      <i class="fa-solid fa-bars"></i>
+                      <div class="main-left-title">
+                        <a href="">Trang chủ</a>
+                        <a href="">Đăng xuất</a>
+                      </div>
+                      <button class="btn" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </div>
+                    
+                    <div class="second-par mt-2 ms-4">
+                      <div class="row">
+                          <div class="col-12 col-md-9 bg-light">
+                              <h2 style="font-size: 20px;">Thêm mới sản phẩm</h2>
+                          </div>
+                          <div class="col-12 col-md-3 bg-light">
+                              <a style="text-decoration: none; line-height: 50px;" href="http://127.0.0.1:5500/index1.html">Trang chủ</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="info-style">
+                      <div class=" ms-4  me-4 row">
+                          <div class="col-12 col-md-8 col-sm-12 border ">
+                              <div class="infor_title border-bottom mb-4 ">
+                                  <h4  >Thông tin sản phẩm</h4>
+                                  
+                              </div>
+                              <div class="detail-info">
+                                  <div class="name-pro mb-5">
+                                      <p>Tên sản phẩm (*)</p>
+                                      <input style="width:100%; height: 40px;color: black;" type="text">
+                                  </div>
+                                  <div class="desc-pro mb-5">
+                                      <p>Mô tả ngắn (*)</p>
+                                      <input style="width:100%; height: 40px;color: black;" type="text">
+                                  </div>
+                                  <div class="detail mb-5">
+                                      <p>Chi tiết (*)</p>
+                                      <input style="width:100%; height: 40px;color: black;" type="text">
+                                  </div>
+                                  <hr class="detail-info">
+                              </div>
+    
+                              <div class="data-pro">
+                                  <div class="div-title">
+                                      <p>Dữ liệu sản phẩm</p>
+                                  </div>
+                                  <div class="form">
+                                      <label for="fname">Giá bán(*): </label>
+                                      <input type="text" id="fname" name="fname" style="margin-left:30px; width: 70%;height: 40px; color: black; margin-bottom:5px ;"> <br>
+                                      <label for="fname">Trạng thái(*): </label>
+                                      <input type="text" id="fname" name="fname" style="margin-left:15px;width: 70%;height: 40px;color: black;">
+                                  </div>
+                              </div>
+                              <hr class="data-pro">
+                          </div>
+                          <div class="col-12 col-md-4 col-sm-12 bg-light border">
+    
+                              <div style="margin-top:7px; margin-left: 0px;" class="style">
+                                  <p>Thể loại sản phẩm</p>
+                              </div>
+                              <hr class="style">
+                              <div class="choose-style">
+                                  <p>Chọn thể loại(*)</p>
+                                  <div class="dropdown">
+                                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="width:100%; height: 42px; text-align: left; background-color: aliceblue; color: black;" >
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Điện thoại</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                       
+                                      </ul>
+                                  </div>
+                              </div>
+                              <hr class="choose-style">
+                              <div class="choose-img">
+                                  <div  class="div-title " >
+                                      <b >Ảnh đại diện</b>
+                                  </div>
+                                  <hr class="div-title">
+                                  <div class="take-img">
+                                      <p>Chọn ảnh</p>
+                                      <h5>Định dạng .jpg</h5>
+                                      <table>
+                                          <tr>
+                                              <td>    
+                                                  <input type="text" placeholder="Choose File" style="width:100px; height: 40px;">
+                                              </td>
+                                              <td>
+                                                  <input style="height: 40px;" type="button" value="Browse" class="me-1">
+                                              </td>
+                                              <td>
+                                                  <input style="height: 40px;" type="submit" value="Upload" class="me-1">
+                                              </td>
+                                          </tr>
+                                      </table>
+                                  </div>
+                                  <div style="margin-top:10px" class="save">
+                                      <div class="column">
+                                          <button type="button" class="btn btn-primary" style="width:155px;">Lưu</button>
+                                          <button type="button" class="btn btn-light" >Hủy</button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <hr class="choose-style">
+                          </div>
+                      </div>
+                  </div>
+                      
+              </div>
+        </div>
+    </div>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
